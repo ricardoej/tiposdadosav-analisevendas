@@ -7,7 +7,7 @@ Este projeto consiste em um programa para analisar os dados de vendas de uma emp
 A empresa possui um conjunto de produtos que são vendidos ao longo de doze meses. Cada produto possui um código identificador único e é vendido em diferentes quantidades mensais. O objetivo do programa é analisar esses dados e fornecer as seguintes informações:
 
 1. **Total de Vendas por Produto:** Calcular o total de vendas de cada produto ao longo dos doze meses.
-2. **Mês com Maior e Menor Número de Vendas:** Identificar em qual mês ocorreu o maior e o menor número de vendas, considerando a soma da venda de todos os produtos.
+2. **Mês com Maior e Menor Número de Vendas:** Identificar em qual mês ocorreu o maior e o menor número de vendas, considerando a soma da venda de todos os produtos (retornar 1 para Janeiro e 12 para Dezembro, por exemplo).
 3. **Média de Vendas Mensais:** Calcular a média de vendas mensais para cada produto.
 4. **Produto mais Vendido:** Identificar o produto com o maior número total de vendas ao longo dos doze meses.
 
