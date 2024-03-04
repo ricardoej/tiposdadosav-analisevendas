@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module AnaliseDeVendas {
+	requires junit;
+}
