@@ -9,18 +9,19 @@ public class AnaliseVendas {
 	}
 	
 
-	public AnaliseVendas(int[][] dadosVendas) {
-		// TODO Auto-generated constructor stub
-	}
 
 	public Object calcularTotalVendasProduto(int produto) {
-		
-		return null;
+		int[] vetorDoProduto = dadosVendas[produto];
+		int total = 0;
+		for(int i = 0; i < vetorDoProduto.length; i++) {
+			total = total + vetorDoProduto[i];
+		}
+		return total;
 	}
 
 	public int identificarMesMaiorVendas() {
-		int maiorValorVendas = 0;
 		int mesMaiorValor = Integer.MIN_VALUE;
+		int maiorValorVendas = 0;
 		for(int i=0; i < dadosVendas[0].length; i++) {
 			int somaDoMesI = 0;
 			for(int j = 0; j < dadosVendas.length; j++) {
@@ -40,8 +41,12 @@ public class AnaliseVendas {
 	}
 
 	public double calcularMediaVendasMensais(int produto) {
-		// TODO Auto-generated method stub
-		return 0;
+		double soma = 0;
+		for(int i = 0; i < dadosVendas[produto].length; i++) {
+			soma+= dadosVendas[produto][i];
+		}
+		double media = soma /dadosVendas[produto].length;
+		return media;
 	}
 
 	public Object identificarProdutoMaisVendido() {
@@ -49,7 +54,7 @@ public class AnaliseVendas {
 		double maiorValor = Double.MIN_VALUE;
 		for(int i = 0; i < dadosVendas[i].length; i++) {
 			int soma = 0;
-			for(int j = 0; j < dadosVendas[i].lenght; j++) {
+			for(int j = 0; j < dadosVendas[i].length; j++) {
 				soma += dadosVendas[i][j];
 			}
 			if(soma > maiorValor) {
