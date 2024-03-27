@@ -15,9 +15,9 @@ public class AnaliseVendasTest {
         };
         AnaliseVendas analise = new AnaliseVendas(dadosVendas);
 
-        assertEquals(1970, analise.calcularTotalVendasProduto(0));
-        assertEquals(1620, analise.calcularTotalVendasProduto(1));
-        assertEquals(1260, analise.calcularTotalVendasProduto(2));
+        assertEquals(1970, analise.calcularTotalVedasProduto(0));
+        assertEquals(1620, analise.calcularTotalVedasProduto(1));
+        assertEquals(1260, analise.calcularTotalVedasProduto(2));
     }
 
     @Test
@@ -29,7 +29,7 @@ public class AnaliseVendasTest {
         };
         AnaliseVendas analise = new AnaliseVendas(dadosVendas);
 
-        assertEquals(12, analise.identificarMesMaiorVendas());
+        assertEquals(12, analise.identidicarMesMaiorVendas());
     }
 
     @Test
@@ -41,7 +41,7 @@ public class AnaliseVendasTest {
         };
         AnaliseVendas analise = new AnaliseVendas(dadosVendas);
 
-        assertEquals(1, analise.identificarMesMenorVendas());
+        assertEquals(1, analise.identidicarMesMaiorVendas());
     }
 
     @Test
